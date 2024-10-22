@@ -23,6 +23,25 @@
   width: 100px;
 }
 
+.button-section {
+  margin-top: 15px;
+}
+
+.button-section button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-section button:hover {
+  background-color: #0056b3;
+}
+
 .result-section p {
   font-size: 18px;
   font-weight: bold;
