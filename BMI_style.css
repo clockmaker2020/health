@@ -1,0 +1,19 @@
+.bmi-calculator {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-section {
+  margin: 10px 0;
+}
+
+.result-section p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.bmi-chart input[type="range"] {
+  width: 100%;
+  background: linear-gradient(to right, red, yellow, green, yellow, red);
+}
