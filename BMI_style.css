@@ -11,36 +11,38 @@
 
 .input-section {
   margin: 10px 0;
-  text-align: right; /* 입력 필드와 레이블 우측 정렬 */
+  display: flex; /* 레이블과 입력 필드를 한 줄에 배치 */
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 레이블과 입력 필드가 수직으로 정렬 */
 }
 
 .input-section label {
   font-size: 14px;
-  float: right; /* 레이블을 입력 필드 오른쪽에 정렬 */
+  margin-right: 10px; /* 입력 필드와 간격 유지 */
 }
 
 .input-section input {
   padding: 5px;
   font-size: 16px;
   width: 100px;
-  text-align: right; /* 입력 필드 안의 숫자 우측 정렬 */
+  text-align: right; /* 입력 필드 안의 텍스트 우측 정렬 */
 }
 
 .button-section {
   margin-top: 15px;
-  text-align: right; /* 버튼 우측 정렬 */
+  display: flex;
+  justify-content: flex-end; /* 버튼을 우측 정렬 */
 }
 
 .button-section button {
   padding: 10px 20px;
-  margin: 5px;
+  margin-left: 10px; /* 버튼 간격 설정 */
   font-size: 14px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  float: right; /* 버튼 우측 정렬 */
 }
 
 .button-section button:hover {
@@ -56,7 +58,7 @@
 
 .bmi-chart {
   margin-top: 20px;
-  text-align: right; /* 차트도 우측 정렬 */
+  text-align: right; /* 차트 우측 정렬 */
 }
 
 .bmi-chart input[type="range"] {
