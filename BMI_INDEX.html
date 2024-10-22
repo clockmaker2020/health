@@ -1,22 +1,22 @@
 <div class="bmi-calculator">
   <div class="input-section">
-    <label for="height">키</label>
-    <input type="number" id="height" value="170"> cm
+    <label for="height">Height</label>
+    <input type="number" id="height" value="170" /> cm
   </div>
   <div class="input-section">
-    <label for="weight">몸무게</label>
-    <input type="number" id="weight" value="70"> kg
+    <label for="weight">Weight</label>
+    <input type="number" id="weight" value="70" /> kg
   </div>
   <div class="result-section">
-    <p>BMI: <span id="bmi">24.2</span></p>
-    <p>BMI 프라임: <span id="bmi-prime">0.97</span></p>
+    <p>BMI: <span id="bmi">--</span></p>
+    <p>BMI Prime: <span id="bmi-prime">--</span></p>
   </div>
   <div class="result-message">
-    <p>당신의 체중은 정상입니다.</p>
+    <p id="message">Your weight is healthy.</p>
   </div>
   <div class="bmi-chart">
-    <input type="range" min="15" max="35" value="24.2" step="0.1" id="bmi-range" disabled>
-    <p id="bmi-label">정상</p>
+    <input type="range" min="15" max="35" value="24.2" step="0.1" id="bmi-range" disabled />
+    <p id="bmi-label">Normal</p>
   </div>
 </div>
 
