@@ -2,15 +2,15 @@ document.getElementById('calculate-btn').addEventListener('click', calculateBMI)
 document.getElementById('reset-btn').addEventListener('click', resetFields);
 
 function calculateBMI() {
-  const height = parseFloat(document.getElementById('height').value) / 100;
+  const height = parseFloat(document.getElementById('height').value);
   const weight = parseFloat(document.getElementById('weight').value);
 
-  if (!height || !weight) {
-    alert('키와 몸무게를 입력하세요.');
+  if (!height || !weight || height <= 0 || weight <= 0) {
+    alert('키와 몸무게는 양수여야 하며 숫자만 입력해야 합니다.');
     return;
   }
 
-  const bmi = weight / (height * height);
+  const bmi = weight / ((height / 100) * (height / 100));
   const bmiPrime = bmi / 25;
 
   document.getElementById('bmi').innerText = bmi.toFixed(1);
@@ -35,4 +35,16 @@ function resetFields() {
   document.getElementById('message').innerText = '당신의 체중은 정상입니다.';
   document.getElementById('bmi-range').value = 24.2;
   document.getElementById('bmi-label').innerText = '정상';
+}
+
+document.getElementById('height').addEventListener('input', handleInputChange);
+document.getElementById('weight').addEventListener('input', handleInputChange);
+
+function handleInputChange(event) {
+  const inputValue = event.target.value;
+  if (inputValue && inputValue > 0) {
+    event.target.style.backgroundColor = 'lightgreen';
+  } else {
+    event.target.style.backgroundColor = 'lightcoral';
+  }
 }
