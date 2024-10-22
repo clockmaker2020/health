@@ -5,27 +5,30 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: right; /* 우측 정렬 */
+  text-align: right; /* 전체 우측 정렬 */
   font-family: Arial, sans-serif;
 }
 
 .input-section {
   margin: 10px 0;
+  text-align: right; /* 입력 필드와 레이블 우측 정렬 */
 }
 
 .input-section label {
   font-size: 14px;
+  float: right; /* 레이블을 입력 필드 오른쪽에 정렬 */
 }
 
 .input-section input {
   padding: 5px;
   font-size: 16px;
   width: 100px;
-  text-align: right; /* 입력 필드 우측 정렬 */
+  text-align: right; /* 입력 필드 안의 숫자 우측 정렬 */
 }
 
 .button-section {
   margin-top: 15px;
+  text-align: right; /* 버튼 우측 정렬 */
 }
 
 .button-section button {
@@ -37,6 +40,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  float: right; /* 버튼 우측 정렬 */
 }
 
 .button-section button:hover {
@@ -47,11 +51,12 @@
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
-  text-align: right; /* 결과 우측 정렬 */
+  text-align: right; /* 결과 텍스트 우측 정렬 */
 }
 
 .bmi-chart {
   margin-top: 20px;
+  text-align: right; /* 차트도 우측 정렬 */
 }
 
 .bmi-chart input[type="range"] {
