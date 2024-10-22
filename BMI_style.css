@@ -5,38 +5,37 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: right; /* 전체 우측 정렬 */
   font-family: Arial, sans-serif;
 }
 
 .input-section {
   margin: 10px 0;
-  display: flex; /* 레이블과 입력 필드를 한 줄에 배치 */
-  justify-content: flex-end; /* 오른쪽 정렬 */
-  align-items: center; /* 레이블과 입력 필드가 수직으로 정렬 */
+  display: flex;
+  justify-content: flex-end; /* 입력 필드와 레이블을 우측 정렬 */
+  align-items: center;
 }
 
 .input-section label {
   font-size: 14px;
-  margin-right: 10px; /* 입력 필드와 간격 유지 */
+  margin-right: 10px; /* 레이블과 입력 필드 간격 */
 }
 
 .input-section input {
   padding: 5px;
   font-size: 16px;
   width: 100px;
-  text-align: right; /* 입력 필드 안의 텍스트 우측 정렬 */
+  text-align: right; /* 입력 필드 내부 텍스트 우측 정렬 */
 }
 
 .button-section {
   margin-top: 15px;
   display: flex;
-  justify-content: flex-end; /* 버튼을 우측 정렬 */
+  justify-content: center; /* 버튼을 중앙 정렬 */
 }
 
 .button-section button {
   padding: 10px 20px;
-  margin-left: 10px; /* 버튼 간격 설정 */
+  margin-left: 10px;
   font-size: 14px;
   background-color: #007bff;
   color: white;
